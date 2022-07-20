@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    background-color: #7271A4;
+}
+header{
+    background-color:#1f1e3f ;
+    height: 30vh;
+    width: 100%;
+
+}
+.company-name{
+    font-size: 3vw;
+    background: none;
+    color: bisque;
+}
+.company-name:hover{
+    color:rgb(231, 170, 94) ;
+    transition: .5s ease;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background: none;
+}
+
+.icon-image{
+    height: 5vh;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 2px solid rgb(7, 17, 43);
+}
+nav ul {
+    background: none;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 3vw;
+    margin-top: 1.8vh;
+    background: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+    background: none;
+}
+nav ul li a:hover{
+    color:dodgerblue;
+    transition: .4s ease;
+
+}
+.search-bar{
+    height: 3vh;
+    width: 10vw;
+    background: none;
+    border: 2px solid #8c8bba;
+    border-radius: 20px;
+}
+.search-btn{
+    height: 3vh;
+    width: 5vw;
+    font-size: 2vh;
+    background: rgb(203, 52, 52);
+    border: 2px solid #8c8bba;
+    border-radius: 8px;
+    color: antiquewhite;
+}
+/* profile image  */
+.profile-img{
+    height: 30vh;
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    border: 5px solid white;
+}
+.name-position{
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    font-size: 1.5vw;
+    background: none;
+}
+.name-position h1{
+    background:none;
+    color: rgb(33, 231, 231);
+}
+.name-position h5{
+    background: none;
+    color: #8c8bba;
+}
+.name-position ul li{
+    display: inline-block;
+    margin: 5% 2%;
+    list-style-type: none;
+}
+.name-position ul li a{
+    color: rgb(97, 13, 13);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2vw;
+}
+/* Lower block  */
+
+.lower-block{
+    
+    margin-top: 25vh;
+    height: 45vh;
+    border: 2px solid antiquewhite;
+    width: 70%;
+    border-radius:0 40px 0 0;
+    
+}
+.lower-block ul {
+    justify-content: space-between;
+    word-spacing: 10vw;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius:0 40px 0 0;
+}
+.lower-block ul li{
+    display: inline-block;
+    list-style-type: none;
+    background-color: antiquewhite;
+}
+.lower-block ul li a{
+    background-color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.lower-block ul li a:hover{
+    background-color: grey;
+    border-radius: 4px;
+    transition: .4s ease;
+}
+.content{
+    margin: 4% 3%;
+    font-size: 1.5vw;
+}
+
+
+/* Right-Block  */
+
+.right-block{
+    position: absolute;
+    top: 30vh;
+    left: 69vw;
+    border: 2px solid rgb(180, 178, 176);
+    height: 70vh;
+    width: 30vw;
+}
+.content-right{
+    margin: 1.2vh 1.3vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.content-right h2{
+    color: rgb(6, 22, 43);
+    border: 1px solid rgb(62, 18, 18);
+}
+
+@media screen and (max-width:600px) {
+    .company-name{
+        font-size: 8vw;
+    }
+    nav ul{
+        display: none;
+    }
+    .icon-image{
+        height: 5vh;
+        width: 15%;
+    }
+    nav ul li a{
+        font-size: 3vw;
+    }
+
+
+    .profile-img{
+        position: absolute;
+        left: 25%;
+       width: 50%;
+       height: 25%;
+       justify-content: center;
+    }
+    .name-position{
+        position: relative;
+        left: 15%;
+        /* margin-top: 30%; */
+        margin: 30% 5%;
+        font-size: 5vw;
+
+    }
+    .name-position ul li a{
+        font-size: 8vw;
+    }
+    .lower-block{
+        position: absolute;
+        top: 43%;
+        width: 100%;
+        margin-left: 1%;    
+        margin-right: 3%;
+    }
+    .lower-block ul li a{
+        font-size: 4.5vw;
+        align-items: center;
+        
+    }
+    .content{
+        font-size: 4vw;
+    }
+
+    .right-block{
+        position: relative;
+        width: 100%;
+        left: 0%;
+    }
+    .content-right h2{
+        font-size: 7vw;
+    }
+    .content-right h4{
+        font-size: 4vw;
+    }
+
+
+
+
+
+}
